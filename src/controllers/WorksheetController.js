@@ -37,7 +37,7 @@ module.exports = {
                 source: req.params.source || 'Direct'
             })
 
-            if (issueType === 'CRITICAL') sendMail()
+            if (issueType === 'CRITICAL') sendMail(name, email)
             
             return res.render('success')
         } catch (err) {
