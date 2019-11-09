@@ -1,11 +1,8 @@
 const router = require('express').Router()
 
-router.get('/', (_, res) => {
-    res.render('home')
-})
+const WorksheetController = require('./controllers/WorksheetController')
 
-router.post('/', (req, res) => {
-    res.send(req.body)
-})
+router.get('/', WorksheetController.index)
+router.post('/', WorksheetController.store)
 
 module.exports = router
