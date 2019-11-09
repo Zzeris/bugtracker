@@ -1,0 +1,19 @@
+{
+  "name": "bugtracker",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "repository": "https://github.com/Zzeris/bugtracker.git",
+  "author": "José Luiz <zzeris@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "build": "node src/server.js"
+  },
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
