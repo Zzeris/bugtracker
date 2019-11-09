@@ -11,4 +11,10 @@ app.set('views', path.resolve(__dirname, 'views'))
 app.use(express.urlencoded({ extended: true }))
 app.use(routes)
 
-app.listen(3333)
+app.listen(3333, err => {
+    if (err) {
+        console.log('Ocorreu um erro: ', err)
+    } else {
+        console.log('Bugtracker rodando em http://localhost:3333')
+    }
+})

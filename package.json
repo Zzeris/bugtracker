@@ -7,11 +7,12 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "build": "node src/server.js"
+    "start": "node src/server.js"
   },
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "google-spreadsheet": "^2.0.8"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
