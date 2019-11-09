@@ -10,6 +10,7 @@
     "start": "node src/server.js"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "google-spreadsheet": "^2.0.8"
