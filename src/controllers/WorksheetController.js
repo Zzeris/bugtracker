@@ -1,5 +1,5 @@
 const GoogleSpreadsheet = require('google-spreadsheet')
-const credentials = require('../../bugtracker.json')
+const credentials = require('../config/bugtracker')
 const { promisify } = require('util')
 
 module.exports = {
@@ -14,7 +14,9 @@ module.exports = {
                 issueType,
                 howToReproduce,
                 expetedOuput,
-                receivedOuput
+                receivedOuput,
+                userAgent,
+                userDate
             } = req.body
     
             const doc = new GoogleSpreadsheet('1J5Rjmy__yr6F1q776AS0jgRj4qZRCBuM5GcFIE_6uL0')
@@ -28,11 +30,14 @@ module.exports = {
                 issueType,
                 howToReproduce,
                 expetedOuput,
-                receivedOuput
+                receivedOuput,
+                userAgent,
+                userDate
             })
             
             return res.send('Bug reportado com sucesso!')
         } catch (err) {
+            console.log(err)
             return res.send('Erro ao enviar formulário.')
         }
     }
