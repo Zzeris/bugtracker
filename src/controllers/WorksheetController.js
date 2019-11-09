@@ -1,5 +1,6 @@
 const GoogleSpreadsheet = require('google-spreadsheet')
 const credentials = require('../config/bugtracker')
+const sendMail = require('../config/sendMail')
 const { promisify } = require('util')
 
 module.exports = {
@@ -32,10 +33,13 @@ module.exports = {
                 expetedOuput,
                 receivedOuput,
                 userAgent,
-                userDate
+                userDate,
+                source: req.params.source || 'Direct'
             })
+
+            if (issueType === 'CRITICAL') sendMail()
             
-            return res.send('Bug reportado com sucesso!')
+            return res.render('success')
         } catch (err) {
             console.log(err)
             return res.send('Erro ao enviar formulário.')
