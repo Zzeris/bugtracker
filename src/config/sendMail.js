@@ -4,7 +4,7 @@ const sendMail = async (name, email) => {
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
     const msg = {
-        to: 'zzeri@gmail.com',
+        to: email,
         cc: 'joselpsantos@outlook.com',
         from: email,
         subject: 'Erro crítico reportado',
