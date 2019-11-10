@@ -1,4 +1,4 @@
-# bugtracker
+# BugTracker
 Projeto desenvolvido no Fullstack Lab.
 
 ### [Demonstração](https://bugtracker.zzeris.now.sh/)
