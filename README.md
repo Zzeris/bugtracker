@@ -30,15 +30,15 @@ $ git clone https://github.com/Zzeris/bugtracker.git
 $ cd bugtracker
 ```
 
-3. Agora, execute:
+4. Agora, execute:
 
 ```
 $ yarn
 ```
 
-4. Adicione um arquivo .env na raiz da aplicação contendo SENDGRID_API_KEY e GOOGLECLOUD_API_KEY;
+5. Adicione um arquivo .env na raiz da aplicação contendo SENDGRID_API_KEY e GOOGLECLOUD_API_KEY;
 
-5. Execute o aplicativo em modo de desenvolvimento:
+6. Execute o aplicativo em modo de desenvolvimento:
 
 ```
 $ yarn dev
