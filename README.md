@@ -1,5 +1,5 @@
 # BugTracker
-:bug: Projeto desenvolvido no Fullstack Lab.
+:bug: Sistema simples de chamados, onde qualquer usuário pode reportar bugs ou melhorias.
 
 ### [Demonstração](https://bugtracker.zzeris.now.sh/)
 
